@@ -45,6 +45,47 @@ python app.py
 
 You can access the live demo of the Hate Speech Detection API at [https://guardian-ai.onrender.com](https://guardian-ai.onrender.com).
 
+## Testing the API with Postman
+
+You can test the Hate Speech Detection API using Postman by following these steps:
+
+1. **Open Postman**.
+   
+2. **Create a New Request**:
+   - Click on the **"New"** button in the top left corner.
+   - Select **"Request"** from the dropdown.
+
+3. **Set Request Type to POST**:
+   - In the dropdown next to the URL input field, select **"POST"**.
+
+4. **Enter the URL**:
+   - Input the following URL in the request URL field: 
+     ```
+     https://guardian-ai.onrender.com/predict
+     ```
+
+5. **Go to the Body Tab**:
+   - Click on the **"Body"** tab below the URL input field.
+
+6. **Select Raw and Set Type to JSON**:
+   - Choose **"raw"** from the options.
+   - In the dropdown next to the raw option, select **"JSON"**.
+
+7. **Enter the JSON Data**:
+   - Input the following JSON in the text area:
+     ```json
+     {
+         "tweet": "I hate everyone"
+     }
+     ```
+
+8. **Click Send**:
+   - Press the **"Send"** button to make the request.
+
+9. **Check the Response**:
+   - After sending the request, check the response in the lower section of Postman. You should see the prediction returned by the API.
+
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
