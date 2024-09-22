@@ -3,9 +3,13 @@ import joblib
 
 app = Flask(__name__)
 
-# Load your model and vectorizer
+# Load your model and vectorizer (make sure these files are in the correct directory)
 model = joblib.load('model.pkl')
 vectorizer = joblib.load('vectorizer.pkl')
+
+@app.route('/')
+def home():
+    return "Welcome to the Hate Speech Detection API"
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -35,5 +39,6 @@ def predict():
         print(f"Error occurred: {e}")
         return jsonify({'error': str(e)}), 500
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# Remove or comment out the following line in production
+# if __name__ == '__main__':
+#     app.run(debug=True)
