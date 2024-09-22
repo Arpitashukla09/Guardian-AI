@@ -41,6 +41,10 @@ python app.py
 
 5. Make a POST request to http://127.0.0.1:5000/predict with a sample tweet.
 
+## Live Demo
+
+You can access the live demo of the Hate Speech Detection API at [https://guardian-ai.onrender.com](https://guardian-ai.onrender.com).
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
