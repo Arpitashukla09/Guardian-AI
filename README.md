@@ -85,6 +85,14 @@ You can test the Hate Speech Detection API using Postman by following these step
 9. **Check the Response**:
    - After sending the request, check the response in the lower section of Postman. You should see the prediction returned by the API.
 
+### Deployment Image
+![Deployment Image](https://github.com/Arpitashukla09/Guardian-AI/blob/master/Deployment.jpg)
+
+### Sending a Request Using Postman
+![Sending Postman Request](https://github.com/Arpitashukla09/Guardian-AI/blob/master/Sending%20Postman%20Request)
+
+### API Generating Page
+![API Generating Page](https://github.com/Arpitashukla09/Guardian-AI/blob/master/live%20demo.jpg)
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
